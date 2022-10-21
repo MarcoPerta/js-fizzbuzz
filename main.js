@@ -1,5 +1,6 @@
 
-let DivBox = document.getElementById('box');
+let divBox = document.getElementById('box');
+console.log(divBox);
 // Creo ciclo for
 for (let i=1; i <= 100; i++){
     if((i%3 === 0) && (i%5 === 0)){
@@ -15,6 +16,7 @@ for (let i=1; i <= 100; i++){
         console.log(i)
     }
 
-    let stringa = '<p>il numero è $(`i`)</p>'
-    DivBox.innerHTML = stringa;
+    let stringa = `<p>il numero è ${i}</p>`
+    divBox.innerHTML += stringa;
+    
 } 
